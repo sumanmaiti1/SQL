@@ -1,0 +1,17 @@
+Ways to Install HR SCHEMA:
+--------------------------
+
+1) Download Sample_DB Schemas from https://github.com/oracle-samples/db-sample-schemas
+2) Unzip the older and place it to C:\app\YOUR_COMP_USER_NAME\product\21c\dbhomeXE\demo\schema
+3) go inside C:\app\YOUR_COMP_USER_NAME\product\21c\dbhomeXE\demo\schema\human_resources.
+4) open CMD from there
+5) Run following comand. [sqlplus sys/admin@//localhost:1521/XEPDB1 as sysdba]
+6) Run following command. [@hr_install.sql]
+7) You Will be prompted for:
+     a. password - enter an Oracle Database compliant password [example: admin]
+     b. tablespace - if you do not enter a tablespace, the default
+        database tablespace is used [Just hit Enter]
+  Note: If the HR schema already exists, it is removed/dropped and
+        a fresh HR schema is installed
+	 c. you will be asked to overwrite already installed (if any) hr schema - write YES and Hir ENTER.
+8) HR schemas will be installed. log will be generated in hr_install.logs

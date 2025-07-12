@@ -11,7 +11,8 @@ Ways to Install HR SCHEMA:
      a. password - enter an Oracle Database compliant password [example: admin]
      b. tablespace - if you do not enter a tablespace, the default
         database tablespace is used [Just hit Enter]
-  Note: If the HR schema already exists, it is removed/dropped and
-        a fresh HR schema is installed
+        
+        Note: If the HR schema already exists, it is removed/dropped and
+        a fresh HR schema is installed        
 	 c. you will be asked to overwrite already installed (if any) hr schema - write YES and Hir ENTER.
 8) HR schemas will be installed. log will be generated in hr_install.logs
